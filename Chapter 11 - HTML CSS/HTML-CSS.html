@@ -1,0 +1,63 @@
+<!-- HTML CSS -->
+<!-- What is CSS? Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more! --> 
+
+<!-- Tip: The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)! -->
+
+<!-- CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file -->
+
+<!-- Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element. -->
+
+<!-- Internal CSS
+An internal CSS is used to define a style for a single HTML page. -->
+
+<!-- External CSS
+An external style sheet is used to define the style for many HTML pages.
+
+To use an external style sheet, add a link to it in the <head> section of each HTML page: -->
+
+<!-- CSS color, fonts, background, font-family, margin, padding -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML CSS</title>
+    <!-- enternal CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        p{
+            color: greenyellow;
+        }
+        h3{
+            color: blueviolet;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline single html element-->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4 style="color:black; background-color: brown;">This is heading 4</h4>
+    <!-- internal CSS html page-->
+    <p>para 1</p>
+    <p>para 2</p>
+    <p>para 3</p>
+    <p>para 4</p>
+    <h3>This is heading 3</h3>
+    <!-- external CSS -->
+    <h5>This is h5</h5>
+    <h6>This is h6</h6>
+</body>
+</html>
