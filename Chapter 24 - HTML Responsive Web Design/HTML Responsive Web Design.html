@@ -1,0 +1,52 @@
+<!-- HTML Responsive Web Design -->
+<!-- Responsive web design is about creating web pages that look good on all devices!
+
+A responsive web design will automatically adjust for different screen sizes and viewports. -->
+<!-- What is Responsive Web Design?
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones) -->
+<!-- Setting The Viewport -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<!-- media queries, viewport unit and text size responsiveness -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Responsive Web Design </title>
+    <style>
+
+.container{
+background-color: blue;
+color: white;
+min-height: 60vw;
+max-width: 80vh;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 900px){
+  body {
+    background-color: rgb(0, 116, 0);
+    font-size: 30px;
+  }
+}
+
+/* max/min height/width */
+/* vh/ vw - view port height and width */
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <span>This is container</span>
+    </div>
+</body>
+</html>
+
+
+
+

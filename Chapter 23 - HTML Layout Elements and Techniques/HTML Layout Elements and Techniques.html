@@ -1,0 +1,98 @@
+<!-- HTML Layout Elements and Techniques -->
+<!-- CSS flexbox -->
+<!-- <header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LAYOUT ELEMETNS AND TECHNIQUES</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.primary-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.myUlList{
+background-color: black;
+color: white;
+list-style-type: none;
+display: flex;
+
+}
+.myUlList{
+    padding: 5px;
+}
+.myLinks{
+    margin: 0px 10px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    background-color: grey;
+    height: 500px;
+
+}
+.myFooter{
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+    <!-- <header>This is a header</header>
+    <nav>This is nav</nav>  
+    <section>This is a section</section> 
+    <article>This is article</article> 
+    <aside>This is aside</aside>
+    <footer>Footer</footer>
+    <summary>Heading<details>These are the details</details></summary> -->
+    <header class="primary-header">My Header</header>
+    <nav class="navbar">
+        <ul class="myUlList">
+            <li class="myList"><a href="#" class="myLinks">Home</a></li>
+            <li class="myList"><a href="#" class="myLinks">About</a></li>
+            <li class="myList"><a href="#" class="myLinks">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="myContainer-1">
+            <section class="mySection">
+                <h2>This is a section</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium cupiditate deserunt ducimus delectus ipsa. Sed odio commodi praesentium, incidunt totam corporis eum dolores maiores blanditiis ullam debitis accusantium ea.
+            </section>
+            <article  class="myArticle">
+                <h2>This is an article</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae odit explicabo illum pariatur eaque quam debitis exercitationem repellat, ducimus est consectetur magnam, officia laboriosam nobis praesentium aliquid distinctio. Tempore, quod?
+            </article>
+        </div>
+        <div class="container-2">
+            <aside  class="myAside">
+                <h2>This is an aside</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id praesentium consectetur tempore, quis expedita dolorem, cumque unde magni, nemo iste aspernatur atque est distinctio possimus in veritatis maiores eos quae.
+            </aside>
+        </div>
+    </div>
+    
+    <footer  class="myFooter">
+        This is our footer
+    </footer>
+</body>
+</html>

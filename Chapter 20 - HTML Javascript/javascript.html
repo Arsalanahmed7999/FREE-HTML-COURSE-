@@ -1,0 +1,51 @@
+<!-- HTML JavaScript -->
+<!-- JavaScript makes HTML pages more dynamic and interactive. -->
+<!-- My First JavaScript -->
+<!-- The HTML <script> Tag
+The HTML <script> tag is used to define a client-side script (JavaScript).
+    
+The <script> element either contains script statements, or it points to an external script file through the src attribute.
+    
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+    
+To select an HTML element, JavaScript most often uses the document.getElementById() method. -->
+<!-- JavaScript can change styles: -->
+<!-- JavaScript can change attributes: -->
+
+<!-- The HTML <noscript> Tag -->
+<!-- The HTML <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support scripts -->
+<!-- HTML for writing the structure, CSS for writing the style, javascript for giving the brain. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JAVASCIPT</title>
+    <style>
+        .demo1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="demo1">This is a tag</h2>
+    <h3 class="demo2"></h3>
+    <button id="btn">CLICK TO GET THE DATE AND TIME</button>
+    <img src="img1.jpg" alt="" class='myImage' width="200px" height="300px">
+</body>
+<script>
+    let button = document.getElementById('btn');
+    button.addEventListener('click', ()=>{
+        let date = new Date();
+        document.querySelector('.demo2').innerHTML = date;
+    });
+    document.querySelector('.demo2').style.fontSize = '50px';
+    document.querySelector('.demo2').style.color = 'red';
+    document.querySelector('.myImage').src = 'img2.jpg';    
+</script>
+
+<noscript>
+    THIS BROWSER DOES NOT SUPPERT JavaScript.
+</noscript>
+</html>
